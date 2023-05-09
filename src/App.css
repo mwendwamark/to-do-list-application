@@ -1,0 +1,249 @@
+:root {
+  --darkblue: #023047;
+  --yellow: #ffb703;
+  --skyBlue: #8ecae6;
+  --blue: #219ebc;
+  --orange: #fb8500;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2000px;
+  height: 100vh;
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar li {
+  margin-bottom: 1rem;
+}
+
+.navbar li:last-child {
+  margin-bottom: 0;
+}
+
+.navbar a {
+  color: var(--yellow);
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: var(--orange);
+}
+
+/* App Header Styles */
+.app-header {
+  font-size: 3rem;
+  color: var(--yellow);
+  text-align: left;
+  padding: 2rem;
+  margin-top: 0;
+  margin-left: 119px;
+}
+
+/* Task List Styles */
+.task-list {
+  list-style: circle;
+  padding: 0;
+  margin: 0;
+  margin-left: 220px;
+}
+
+.task-list li {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* Input Group Styles */
+/* .input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-left: 220px;
+} */
+
+/* Home Message Styles */
+.home-message {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  color: var(--darkblue);
+  padding: 2rem;
+  margin-left: 220px;
+}
+
+.home-message span {
+  color: var(--orange);
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.home-icon {
+  font-size: 3rem;
+  color: var(--yellow);
+  margin-right: 1rem;
+}
+
+.app-header {
+  font-size: 3rem;
+  color: #03a9f4;
+}
+
+.home-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.home-message h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home-message span {
+  font-weight: bold;
+  color: #03a9f4;
+}
+
+.home-cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #03a9f4;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.home-cta:hover {
+  background-color: #0288d1;
+}
+
+.home-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.home-social-icon {
+  font-size: 1.5rem;
+  color: #03a9f4;
+  margin: 0 1rem;
+}
+
+.home-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.home-features h2 {
+  font-size: 2rem;
+  color: #03a9f4;
+  margin-bottom: 2rem;
+}
+
+.home-features ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.home-features ul li:before {
+  content: "\2713";
+  /* Unicode character for a tick or checkmark */
+  color: var(--blue);
+  /* Change the color to match your color scheme */
+  margin-right: 0.5em;
+}
+.home-features li {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-testimonials h2 {
+  font-size: 2rem;
+  color: #03a9f4;
+  margin-bottom: 2rem;
+}
+
+.testimonial {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  text-align: center;
+}
+
+.testimonial p:first-of-type {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial p:last-of-type {
+  font-size: 1rem;
+  color: var(--blue);
+}

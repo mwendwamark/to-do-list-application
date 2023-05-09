@@ -1,0 +1,108 @@
+:root {
+    --darkblue: #023047;
+    --yellow: #ffb703;
+    --skyBlue: #8ecae6;
+    --blue: #219ebc;
+    --orange: #fb8500;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+
+.form-title {
+    background-color: whitesmoke;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.adding-a-task-list {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+    height: 40px;
+    /* added */
+}
+
+.add-button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: var(--yellow);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.add-button:hover {
+    background-color: var(--orange);
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list-item {
+    background-color: var(--skyBlue);
+    color: var(--darkblue);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    /* changed from 700 */
+}
+.delete-button {
+    background-color: var(--blue);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.delete-button:hover {
+    background-color: var(--orange);
+}
+.delete-button svg {
+    fill: #fff;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+/* .delete-button svg.trash-icon {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.delete-button svg.trash-icon path {
+    fill: #fff;
+}
+.delete-button svg.trash-icon rect {
+    fill: #fff;
+}
+.home-icon-form{
+    font-size: 3rem;
+    color: var(--yellow);
+    margin-right: 1rem;
+    top:0;
+    left:auto;
+} */

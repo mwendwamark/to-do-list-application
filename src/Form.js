@@ -1,6 +1,20 @@
 import React, { useState, useEffect } from "react";
 import "./Form.css";
 import { FaTasks } from "react-icons/fa";
+// import { FaTrash } from "react-icons/fa";
+// import { FaPlus } from "react-icons/fa";
+// import { FaTrash } from "react-icons/fa";
+// import { FaEdit } from "react-icons/fa";
+// import { FaCheck } from "react-icons/fa";
+// import { FaTimes } from "react-icons/fa";
+// import { FaCheckCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+const HomeIcon = () => (
+  <Link to="/">
+    <FaTasks className="home-icon-form" />
+  </Link>
+);
 
 const Form = () => {
   const [task, setTask] = useState("");
@@ -33,7 +47,8 @@ const Form = () => {
 
   return (
     <div className="form-container">
-      <FaTasks className="home-icon-form" />
+      {/* <FaTasks className="home-icon-form" /> */}
+      <HomeIcon />
       <header>
         <h1>My To-Do List</h1>
       </header>

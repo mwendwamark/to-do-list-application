@@ -1,6 +1,19 @@
 import React, { useState } from "react";
 import "./login.css";
 import { FaTasks } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+const HomeIcon = () => (
+  <Link to="/">
+    <FaTasks className="home-icon-login" />
+  </Link>
+);
+
+const RegisterIcon = () => (
+  <Link to="/todo">
+    <p className="register-icon-login" > Proceed</p>
+  </Link>
+);
 
 const Login = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -12,10 +25,10 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <FaTasks className="home-icon-login" />
+      <HomeIcon />
       <h2>Create an Account</h2>
       {submitted ? (
-        <p>Thank you for submitting your information.</p>
+        <p>Thank you for submitting your information. <RegisterIcon/></p>
       ) : (
         <form onSubmit={handleSubmit} className="login-form">
           <br />
@@ -62,25 +75,26 @@ const Login = () => {
               Submit
             </button>
             <div className="button-separator" />
-            <a href="/" className="home-cta-x">
+            {/* <a href="/" className="home-cta-x">
               Home
-            </a>
+            </a> */}
             <div className="button-separator" />
-            <a href="/todo" className="home-cta-x">
+            {/* <a href="/todo" className="home-cta-x">
               Proceed
-            </a>
+            </a> */}
           </div>
         </form>
       )}
       <br />
       <p>
-        Already have an account? <a href="/login">Log in</a>.
+        {/* Welcome we assure you the best experience  */}
       </p>
       <br />
       <p>
-        By creating an account, you agree to our{" "}
+        
+        {/* By creating an account, you agree to our{" "}
         <a href="/terms">terms of use</a> and{" "}
-        <a href="/privacy">privacy policy</a>.
+        <a href="/privacy">privacy policy</a>. */}
       </p>
     </div>
   );

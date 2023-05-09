@@ -7,102 +7,90 @@
 }
 
 .form-container {
+    position: relative;
+    /* set a minimum height so the icon stays at the top */
+    min-height: 100vh;
+}
+
+.icon-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.home-icon-form {
+    font-size: 2rem;
+    color: var(--orange);
+}
+
+.header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 75vh;
+    align-items: center;
+    background-color: #f5f5f5;
+    height: 8rem;
 }
 
 .form-title {
-    background-color: whitesmoke;
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .adding-a-task-list {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    width: 100%;
-    margin-right: 10px;
+    padding: 0.75rem 1rem;
+    margin-right: 1rem;
     border-radius: 5px;
-    height: 40px;
-    /* added */
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
 }
 
 .add-button {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    background-color: var(--yellow);
-    color: #fff;
-    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: #00909e;
     border-radius: 5px;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.add-button:hover {
-    background-color: var(--orange);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 .task-list {
-    list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .task-list-item {
-    background-color: var(--skyBlue);
-    color: var(--darkblue);
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    font-size: 20px;
-    /* changed from 700 */
-}
-.delete-button {
-    background-color: var(--blue);
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
+    margin-bottom: 1rem;
+    padding: 1rem;
     border-radius: 5px;
-    transition: background-color 0.2s ease-in-out;
+    background-color: var(--skyBlue);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.delete-button:hover {
-    background-color: var(--orange);
+.delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
-.delete-button svg {
-    fill: #fff;
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
+
+.trash-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #f44336;
 }
-/* .delete-button svg.trash-icon {
-    fill: #fff;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-.delete-button svg.trash-icon path {
-    fill: #fff;
-}
-.delete-button svg.trash-icon rect {
-    fill: #fff;
-}
-.home-icon-form{
-    font-size: 3rem;
-    color: var(--yellow);
-    margin-right: 1rem;
-    top:0;
-    left:auto;
-} */

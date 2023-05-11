@@ -58,7 +58,19 @@ const Login = () => {
             name="username"
             placeholder="Create username..."
             className="user-name-input"
+            required
           />
+          <br />
+          <label htmlFor="email">Create Acount</label>
+
+          <input 
+          type="text" 
+          name="email"
+          placeholder="Create email..."
+          className="email-input"
+          required
+          />
+          <br />
           <br />
           <label htmlFor="password">Create password..</label>
 
@@ -67,6 +79,7 @@ const Login = () => {
             name="password"
             placeholder="Create password..."
             className="password-input"
+            required
           />
           <br />
           <br />

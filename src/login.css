@@ -50,6 +50,7 @@
 .first-name-input{
     padding-left: 10px;
 }
+.email-input,
 .password-input,
 .user-name-input{
     width: 100%;
@@ -77,6 +78,9 @@
     font-size: 3rem;
     color: var(--yellow);
     margin-right: 1rem;
+}
+.home-icon-login:hover{
+    color: var(--darkblue);
 }
 .register-icon-login{
     background-color: var(--darkblue);

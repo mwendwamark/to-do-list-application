@@ -1,8 +1,11 @@
 {
-  "Tasks":[
+  "Users":[
     {
-      "TaskName":"Test Task",
-      "TaskDescription":"This is a test task"
+      "Id":"1",
+      "name":"This is a test task",
+      "userName":"",
+      "password":"",
+      "email":""
     }
   ]
   

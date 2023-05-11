@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link to="/login">Login</Link>
           </li>
           <li className="todo-page">
-            <Link to="/todo">YOUR-LIST</Link>
+            <Link to="/todo">MY TO-DO LIST</Link>
           </li>
         </ul>
       </div>

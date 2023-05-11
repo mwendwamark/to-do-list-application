@@ -1,10 +1,12 @@
 :root {
-  --darkblue: #023047;
-  --yellow: #ffb703;
-  --skyBlue: #8ecae6;
-  --blue: #219ebc;
-  --orange: #fb8500;
+    --darkblue: #023047;
+    --yellow: #ffb703;
+    --skyBlue: #8ecae6;
+    --blue: #219ebc;
+    --orange: #fb8500;
+    --green:#8ac926;
 }
+
 
 /* Navbar Styles */
 .navbar {
@@ -171,14 +173,21 @@
 .home-social-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   margin-top: 2rem;
 }
 
 .home-social-icon {
-  font-size: 1.5rem;
-  color: #03a9f4;
+  font-size: 2.5rem;
+  color: var(--yellow);
   margin: 0 1rem;
+  transform: scale(1.1);
+}
+.home-social-icon:hover{
+  color: var(--skyBlue);
+  scale: 1.1;
+
+
 }
 
 .home-features {
@@ -246,4 +255,134 @@
 .testimonial p:last-of-type {
   font-size: 1rem;
   color: var(--blue);
+}
+
+.reminder-component {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.reminder-label {
+  color: var(--skyBlue);
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.reminder-datepicker {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  padding: 10px;
+  background-color: var(--darkblue);
+  color: white;
+}
+
+.react-datepicker-wrapper {
+  display: block;
+}
+
+.react-datepicker__time-container {
+  float: right;
+}
+
+.react-datepicker__time-box {
+  border: none;
+  background-color: var(--blue);
+  border-radius: 5px;
+}
+
+.react-datepicker__time-list {
+  padding: 0px;
+}
+
+.react-datepicker__time-list-item {
+  background-color: var(--blue);
+  color: white;
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: var(--orange);
+}
+
+.react-datepicker__time-list-item:hover {
+  background-color: var(--orange);
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+  background-color: var(--skyBlue);
+  color: white;
+}
+
+.react-datepicker__day:hover {
+  background-color: var(--skyBlue);
+  color: var(--darkblue);
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  color: var(--yellow);
+  margin-top: 50px;
+  width: 100%;
+}
+
+.home-social-icons ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+ 
+}
+
+.home-social-icons a {
+  display: center;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.home-social-icons a:hover {
+  color: #00c300;
+  /* Change the color to your desired hover color */
+}
+
+.home-social-icon-instagram {
+  
+  font-size: 40px;
+}
+.home-social-icon-instagram:hover{
+  color: #e1306c;
+}
+
+
+.home-social-icon-linkedin {
+ 
+  font-size: 40px;
+}
+.home-social-icon-linkedin:hover{
+  color: #0077b5;
+
+}
+
+.home-social-icon-whatsapp {
+  
+  font-size: 40px;
+}
+.home-social-icon-whatsapp:hover{
+color: #25d366;
+}
+
+.home-social-icon-github {
+
+  font-size: 40px;
+}
+.home-social-icon-github:hover{
+    color: #24292e;
 }

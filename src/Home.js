@@ -1,6 +1,6 @@
 import React from "react";
 import { FaTasks } from "react-icons/fa";
-import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import "./App.css";
 // import backgroundImage from "./background.jpg";
 
@@ -55,28 +55,45 @@ const Home = () => {
           </p>
           <p>- Jane Smith, Freelance Writer</p>
         </div>
-        <div className="home-social-icons">
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram className="home-social-icon" />
-          </a>
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className="home-social-icon" />
-          </a>
-          <a
-            href="https://api.whatsapp.com/send?phone=0717084324"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaWhatsapp className="home-social-icon" />
-          </a>
+        <div>
+          <footer className="footer-container">
+            <h3 className="conect"></h3>
+            <br />
+            <div className="home-social-icons">
+              <ul>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="instagram"
+                >
+                  <FaInstagram className="home-social-icon-instagram" />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="home-social-icon-linkedin" />
+                </a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=0717084324"
+                  target="https://web.whatsapp.com/"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsapp className="home-social-icon-whatsapp" />
+                </a>
+                <a
+                  href="https://github.com/"
+                  target="https://github.com/mwendwamark"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="home-social-icon-github" />
+                </a>
+              </ul>
+            </div>
+          </footer>
         </div>
       </div>
     </div>

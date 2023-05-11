@@ -20,6 +20,9 @@ const Navbar = () => {
           <li className="todo-page">
             <Link to="/todo">MY TO-DO LIST</Link>
           </li>
+          <li>
+            <Link to= "/terms_policies_and_privacy"></Link>
+          </li>
         </ul>
       </div>
     </nav>

@@ -57,7 +57,7 @@ const Home = () => {
         </div>
         <div>
           <footer className="footer-container">
-            <h3 className="conect"></h3>
+            {/* <h3 className="conect"></h3> */}
             <br />
             <div className="home-social-icons">
               <ul>

@@ -1,19 +1,18 @@
 {
-  "posts": [
+  "name": "",
+  "email": "johndoe@example.com",
+  "tasks": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "text": "Buy groceries",
+      "done": false
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "text": "Finish project report",
+      "done": true
+    },
+    {
+      "text": "Call mom",
+      "done": false
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

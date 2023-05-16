@@ -116,6 +116,31 @@
   background-color: #f9f9f9;
 }
 
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+
+  
+  .home-container {
+    padding: 40px;
+  }
+
+  .home-message {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* ... Apply other layout adjustments as needed ... */
+}
+
+/* ... Apply additional media queries and styles for different screen sizes ... */
 .home-header {
   display: flex;
   align-items: center;

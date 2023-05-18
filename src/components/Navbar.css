@@ -5,12 +5,12 @@
     --blue: #219ebc;
     --orange: #fb8500;
 }
-
+/*
 .navbar {
-    /* position: fixed;
+     position: fixed;
     left: 0;
     top: 0; */
-    /* bottom: 0;  */
+    /* bottom: 0;  
     width: 200px;
     background-color: var(--darkblue);
     display: flex;
@@ -69,7 +69,7 @@
     background-color: var(--yellow);
     color: var(--darkblue);
 }
-/* ... previous styles ... */
+/* ... previous styles ... 
 
 .navbar {
     position: fixed;
@@ -127,17 +127,17 @@
 .nav-link {
     font-size: 30px;
 }
-/* ... previous styles ... */
+/* ... previous styles ... 
 
 .navbar li a {
-    /* ... previous styles ... */
+    /* ... previous styles ... 
     position: relative;
-    /* Add this line */
+    /* Add this line 
 }
 
 .navbar li a::after {
     content: attr(data-text);
-    /* Add this line */
+    /* Add this line *
     position: absolute;
     top: 50%;
     left: 100%;
@@ -192,4 +192,98 @@
 .login-navbar li a:hover {
     background-color: var(--yellow);
     color: var(--darkblue);
+}*/
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navbar.open {
+    height: auto;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 20px;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .navbar.open ul {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-container {
+        padding: 0 10px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
 }

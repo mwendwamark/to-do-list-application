@@ -141,10 +141,11 @@ p {
 }
 
 .footer-container {
-    background-color: var(--skyBlue);
+    background-color: gray;
     padding: 20px;
     text-align: center;
     color: #fff;
+    width:100%;
 }
 
 .footer-container h3 {

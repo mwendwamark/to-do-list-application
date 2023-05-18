@@ -1,17 +1,40 @@
- :root {
-    --darkblue: #023047;
-    --yellow: #ffb703;
-    --skyBlue: #8ecae6;
-    --blue: #219ebc;
-    --orange: #fb8500;
-    --green:#8ac926;
+:root {
+  --darkblue: #023047;
+  --yellow: #ffb703;
+  --skyBlue: #8ecae6;
+  --blue: #219ebc;
+  --orange: #fb8500;
+  --green: #8ac926;
 }
 
 .home-container {
-  max-width: 800px;
-  margin: 0 auto;
+  position: relative;
+  max-width: 100%;
   padding: 20px;
+  width: 100vw;
+  /* background-image: url(backgroundImage); */
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
+  /* Add this line to hide horizontal overflow */
 }
+/* .home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url(backgroundImage); *
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+} */
 
 @media (max-width: 600px) {
   .home-container {
@@ -24,45 +47,77 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  font-size: 800px;
 }
 
 .home-icon {
   font-size: 24px;
+  color: var(--darkblue);
+  font-size: 79px;
 }
 
 .app-header {
   margin-left: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 79px;
+  color: var(--darkblue);
 }
 
 .home-message {
   margin-bottom: 40px;
+  color: var(--darkblue);
+  text-shadow:#df6565;
+  font-size: 22px;
+  text-decoration:initial ;
+  border-radius: 12px;
 }
 
 .home-cta {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: var(--green);
   color: white;
   text-decoration: none;
   border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.home-cta:hover {
+  background-color: var(--darkblue);
 }
 
 .home-features ul {
   padding-left: 20px;
   margin-top: 10px;
+  color: var(--darkblue);
+  font-size: 20px;
 }
 
 .home-testimonials {
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* Align testimonials to the left */
+  margin-right: auto;
+  /* Add auto margin to push them to the right side */
+  max-width: 600px;
+  /* Adjust the maximum width as needed */
+  margin-right: 0;
+  /* Remove the right margin */
 }
 
 .testimonial {
   margin-bottom: 20px;
+  color: var(--darkblue);
+  text-align: right;
 }
 
 .footer-container {
   margin-top: 40px;
-  text-align: center;
+  text-align: right;
+  border-radius: 10px;
 }
 
 .home-social-icons ul {
@@ -75,12 +130,13 @@
 
 .home-social-icons a {
   margin-right: 10px;
-  color: #000;
+  color: var(--darkblue);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .home-social-icons a:hover {
-  color: #4caf50;
+  color: var(--green);
 }
 
 /* Additional Styles for Icons */
@@ -107,178 +163,6 @@
 .home-social-icon-github:hover {
   color: #333;
 }
-/*
-App Header Styles
-.app-header {
-  font-size: 3rem;
-  color: var(--yellow);
-  text-align: left;
-  padding: 2rem;
-  margin-top: 0;
-  margin-left: 119px;
-}
-
- Task List Styles 
-.task-list {
-  list-style: circle;
-  padding: 0;
-  margin: 0;
-  margin-left: 220px;
-}
-
-.task-list li {
-  display: block;
-  padding: 10px;
-  border: 1px solid #ddd;
-  margin-bottom: 5px;
-  border-radius: 5px;
-}
-
-
-.home-message {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: center;
-  color: var(--darkblue);
-  padding: 2rem;
-  margin-left: 220px;
-}
-
-.home-message span {
-  color: var(--orange);
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: underline;
-}
-.home-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 2rem;
-  background-color: #f9f9f9;
-  border-radius: 20px;
-}
-@media (min-width: 768px) {
-
-  
-  .home-container {
-    padding: 40px;
-  }
-
-  .home-message {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-}
-
-.home-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.home-icon {
-  font-size: 48px;
-  color: var(--yellow);
-  margin-right: 1rem;
-}
-
-.app-header {
-  font-size: 3rem;
-  color: #03a9f4;
-}
-
-.home-message {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.home-message h3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  margin-bottom: 2rem;
-}
-
-.home-message span {
-  font-weight: bold;
-  color: #03a9f4;
-}
-
-.home-cta {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #03a9f4;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 3px;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.home-cta:hover {
-  background-color: #0288d1;
-}
-
-.home-social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  margin-top: 2rem;
-}
-
-.home-social-icon {
-  font-size: 2.5rem;
-  color: var(--yellow);
-  margin: 0 1rem;
-  transform: scale(1.1);
-}
-.home-social-icon:hover{
-  color: var(--skyBlue);
-  scale: 1.1;
-
-
-}
-
-.home-features {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 4rem;
-}
-
-.home-features h2 {
-  font-size: 2rem;
-  color: #03a9f4;
-  margin-bottom: 2rem;
-}
-
-.home-features ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.home-features ul li:before {
-  content: "\2713";
-  color: var(--blue);
-  margin-right: 0.5em;
-}
-.home-features li {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 .home-testimonials {
   display: flex;
   flex-direction: column;
@@ -290,17 +174,22 @@ App Header Styles
   font-size: 2rem;
   color: #03a9f4;
   margin-bottom: 2rem;
+  text-align: left;
+  border-radius: 20px;
 }
 
-.testimonial {
+ .testimonial {
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 30px;
   padding: 2rem;
   margin-bottom: 2rem;
   max-width: 600px;
-  text-align: center;
-}
+  text-align: left;  
+  margin-left: auto;  
+  margin-right: auto;
+  
+} 
 
 .testimonial p:first-of-type {
   font-size: 1.2rem;
@@ -312,261 +201,3 @@ App Header Styles
   font-size: 1rem;
   color: var(--blue);
 }
-
-.reminder-component {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.reminder-label {
-  color: var(--skyBlue);
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.reminder-datepicker {
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  padding: 10px;
-  background-color: var(--darkblue);
-  color: white;
-}
-
-.react-datepicker-wrapper {
-  display: block;
-}
-
-.react-datepicker__time-container {
-  float: right;
-}
-
-.react-datepicker__time-box {
-  border: none;
-  background-color: var(--blue);
-  border-radius: 5px;
-}
-
-.react-datepicker__time-list {
-  padding: 0px;
-}
-
-.react-datepicker__time-list-item {
-  background-color: var(--blue);
-  color: white;
-}
-
-.react-datepicker__time-list-item--selected {
-  background-color: var(--orange);
-}
-
-.react-datepicker__time-list-item:hover {
-  background-color: var(--orange);
-}
-
-.react-datepicker__day--selected,
-.react-datepicker__day--in-selecting-range,
-.react-datepicker__day--in-range {
-  background-color: var(--skyBlue);
-  color: white;
-}
-
-.react-datepicker__day:hover {
-  background-color: var(--skyBlue);
-  color: var(--darkblue);
-}
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: gray;
-  color: var(--yellow);
-  margin-top: 50px;
-  width: 100%;
-}
-
-.home-social-icons ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
- 
-}
-
-.home-social-icons a {
-  display: center;
-  margin-right: 10px;
-  color: #fff;
-  font-size: 24px;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.home-social-icons a:hover {
-  color: #00c300;
-  
-}
-
-.home-social-icon-instagram {
-  
-  font-size: 40px;
-}
-.home-social-icon-instagram:hover{
-  color: #e1306c;
-}
-
-
-.home-social-icon-linkedin {
- 
-  font-size: 40px;
-}
-.home-social-icon-linkedin:hover{
-  color: #0077b5;
-
-}
-
-.home-social-icon-whatsapp {
-  
-  font-size: 40px;
-}
-.home-social-icon-whatsapp:hover{
-color: #25d366;
-}
-
-.home-social-icon-github {
-
-  font-size: 40px;
-}
-.home-social-icon-github:hover{
-    color: #24292e;
-}
-
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.home-message {
-  animation: fadeInUp 0.5s ease;
-}
-
-.home-features {
-  animation: fadeInUp 0.5s ease;
-  animation-delay: 0.2s;
-}
-
-.home-testimonials {
-  animation: fadeInUp 0.5s ease;
-  animation-delay: 0.4s;
-}
-
-.testimonial {
-  animation: fadeInUp 0.5s ease;
-}
-
-.footer-container {
-  animation: fadeInUp 0.5s ease;
-  animation-delay: 0.6s;
-}
-
-.home-social-icons {
-  animation: fadeInUp 0.5s ease;
-  animation-delay: 0.6s;
-}
-
-@media screen and (min-width: 768px) {
-   .home-container {
-    padding: 40px;
-  } 
-
-  .home-icon {
-    font-size: 64px;
-  }
-
-  .app-header {
-    font-size: 32px;
-  }
-
-  .home-message {
-    margin: 40px 0;
-  }
-
-  .home-cta {
-    font-size: 18px;
-    padding: 12px 24px;
-  }
-
-  .home-features li {
-    font-size: 18px;
-  }
-
-  .testimonial {
-    font-size: 18px;
-  }
-
-  .footer-container {
-    padding: 40px;
-  }
-
-  .home-social-icon-instagram,
-  .home-social-icon-linkedin,
-  .home-social-icon-whatsapp,
-  .home-social-icon-github {
-    font-size: 32px;
-  }
-}
-
-@media screen and (min-width: 104px) {
-   .home-container {
-    max-width: 960px;
-    margin: 0 ;
-  } 
-
-  .home-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-
-  .home-message {
-    text-align: left;
-  }
-
-  .home-features,
-  .home-testimonials {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 60px;
-  }
-
-  .home-testimonials {
-    flex-wrap: wrap;
-  }
-
-  .testimonial {
-    width: calc(50% - 10px);
-  }
-
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-.marginTop{
-  padding: none;
-  margin: none;
-} */
-

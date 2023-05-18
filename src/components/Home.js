@@ -2,13 +2,13 @@ import React from "react";
 import { FaTasks } from "react-icons/fa";
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import "./App.css";
-// import backgroundImage from "./background.jpg";
+import backgroundImage from "./background.jpg";
 
 const Home = () => {
   return (
     <div
       className="home-container"
-      // style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="home-header">
         <FaTasks className="home-icon" />
@@ -33,8 +33,8 @@ const Home = () => {
           <li>Easy to use interface</li>
           <li>Customizable task categories</li>
           <li>Set due dates and reminders</li>
-          <li>Assign tasks to team members</li>
-          <li>View progress and completion rates</li>
+          {/* <li>Assign tasks to team members</li>
+          <li>View progress and completion rates</li> */}
         </ul>
       </div>
       <div className="home-testimonials">

@@ -1,4 +1,4 @@
-:root {
+ :root {
     --darkblue: #023047;
     --yellow: #ffb703;
     --skyBlue: #8ecae6;
@@ -7,9 +7,108 @@
     --green:#8ac926;
 }
 
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
+@media (max-width: 600px) {
+  .home-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
 
-/* App Header Styles */
+.home-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home-icon {
+  font-size: 24px;
+}
+
+.app-header {
+  margin-left: 10px;
+}
+
+.home-message {
+  margin-bottom: 40px;
+}
+
+.home-cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.home-features ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.home-testimonials {
+  margin-top: 40px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.home-social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.home-social-icons a {
+  margin-right: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.home-social-icons a:hover {
+  color: #4caf50;
+}
+
+/* Additional Styles for Icons */
+
+.home-social-icon-instagram,
+.home-social-icon-linkedin,
+.home-social-icon-whatsapp,
+.home-social-icon-github {
+  font-size: 24px;
+}
+
+.home-social-icon-instagram:hover {
+  color: #e4405f;
+}
+
+.home-social-icon-linkedin:hover {
+  color: #0e76a8;
+}
+
+.home-social-icon-whatsapp:hover {
+  color: #25d366;
+}
+
+.home-social-icon-github:hover {
+  color: #333;
+}
+/*
+App Header Styles
 .app-header {
   font-size: 3rem;
   color: var(--yellow);
@@ -19,7 +118,7 @@
   margin-left: 119px;
 }
 
-/* Task List Styles */
+ Task List Styles 
 .task-list {
   list-style: circle;
   padding: 0;
@@ -36,7 +135,6 @@
 }
 
 
-/* Home Message Styles */
 .home-message {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -60,6 +158,7 @@
   height: 100%;
   padding: 2rem;
   background-color: #f9f9f9;
+  border-radius: 20px;
 }
 @media (min-width: 768px) {
 
@@ -171,9 +270,7 @@
 
 .home-features ul li:before {
   content: "\2713";
-  /* Unicode character for a tick or checkmark */
   color: var(--blue);
-  /* Change the color to match your color scheme */
   margin-right: 0.5em;
 }
 .home-features li {
@@ -309,7 +406,7 @@
 
 .home-social-icons a:hover {
   color: #00c300;
-  /* Change the color to your desired hover color */
+  
 }
 
 .home-social-icon-instagram {
@@ -345,9 +442,7 @@ color: #25d366;
 .home-social-icon-github:hover{
     color: #24292e;
 }
-/* ... previous CSS code ... */
 
-/* Animations */
 
 @keyframes fadeInUp {
   0% {
@@ -390,9 +485,9 @@ color: #25d366;
 }
 
 @media screen and (min-width: 768px) {
-  .home-container {
+   .home-container {
     padding: 40px;
-  }
+  } 
 
   .home-icon {
     font-size: 64px;
@@ -431,11 +526,11 @@ color: #25d366;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .home-container {
+@media screen and (min-width: 104px) {
+   .home-container {
     max-width: 960px;
-    margin: 0 auto;
-  }
+    margin: 0 ;
+  } 
 
   .home-header {
     display: flex;
@@ -470,3 +565,8 @@ color: #25d366;
     align-items: center;
   }
 }
+.marginTop{
+  padding: none;
+  margin: none;
+} */
+

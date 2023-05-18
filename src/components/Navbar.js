@@ -64,20 +64,28 @@ const Navbar = () => {
                 </span>
               </Link>
             </li>
-          </ul>
-        </div>
-      </nav>
-      <nav className="login-navbar">
-        <ul>
-          <li>
+
+            <li>
             <Link to="/login">
               {/* <span className="nav-link">
                 <FaSignInAlt />
               </span> */}Login
             </Link>
           </li>
-        </ul>
+          </ul>
+        </div>
       </nav>
+      {/* <nav className="login-navbar">
+        <ul>
+          <li>
+            <Link to="/login">
+              {/* <span className="nav-link">
+                <FaSignInAlt />
+              </span> *Login
+            </Link>
+          </li>
+        </ul>
+      </nav> */}
     </div>
   );
 };

@@ -1,29 +1,23 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Form from "./Form";
-import Home from "./Home";
-import Navbar from "./Navbar";
-import Login from "./Login";
-import Services from "./Services";
-import About from "./About";
-import "./App.css";
-import Contacts from "./Contacts";
+import Form from "./components/Form";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import Login from "./components/Login";
+import Services from "./components/Services";
+import About from "./components/About";
+import "./components/App.css";
+import Contacts from "./components/Contacts";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div style={{ backgroundColor: "var(--skyBlue)" }}>
+      {/* <div 
+      style={{ backgroundColor: "var(--skyBlue)" }}
+      > */}
         <Navbar />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            minHeight: "calc(100vh - 80px)",
-            backgroundColor: "var(--blue)",
-            padding: "20px",
-          }}
-        >
+        
+        
           <Routes>
             <Route path="/login" element={<Login />} />
             {/* <Route path="/form" element={<Form />} /> */}
@@ -33,8 +27,8 @@ const App = () => {
             <Route path = "/about" element={<About />} />
             <Route path = "/contacts" element = {<Contacts />} />
           </Routes>
-        </div>
-      </div>
+        
+      {/* </div> */}
     </BrowserRouter>
   );
 };

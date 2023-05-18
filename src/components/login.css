@@ -1,5 +1,6 @@
-.login-container{
+/*.login-container{
     background-attachment: fixed;
+    margin: 0;
 }
 .login-form {
     display: flex;
@@ -58,7 +59,7 @@
     border: none;
     border-radius: 50px;
 }
-/* Password
+ Password
 .password-input{
     padding-left: 10px;
 }
@@ -73,7 +74,7 @@
 .password-input::placeholder,
 .user-name-input::placeholder{
     color: var(--darkblue);
-} */
+} 
 .home-icon-login{
     font-size: 3rem;
     color: var(--yellow);
@@ -92,4 +93,63 @@
         cursor: pointer;
         transition: background-color 0.2s;
 
+}*/
+.login-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+.home-icon-login {
+    font-size: 24px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+}
+
+.proceed-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-separator {
+    width: 10px;
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 20px;
 }

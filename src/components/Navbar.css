@@ -7,10 +7,10 @@
 }
 
 .navbar {
-    position: fixed;
+    /* position: fixed;
     left: 0;
-    top: 30px;
-    bottom: 0;
+    top: 0; */
+    /* bottom: 0;  */
     width: 200px;
     background-color: var(--darkblue);
     display: flex;

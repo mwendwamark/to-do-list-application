@@ -5,16 +5,38 @@
     --blue: #219ebc;
     --orange: #fb8500;
 }
+
 .navbar {
     position: fixed;
     left: 0;
-    top: 0;
+    top: 30px;
     bottom: 0;
-    width: 150px;
+    width: 200px;
     background-color: var(--darkblue);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    animation: fadeIn 0.5s ease forwards;
+    border-radius:  5px;
+    border-style:outset;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(2);
+    }
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navbar ul {
@@ -24,22 +46,150 @@
 }
 
 .navbar li {
-    margin: 10px;
+    margin: 15px 0;
 }
 
 .navbar li a {
-    display: block;
+    display: flex;
+    align-items: center;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    text-align: center;
-    padding: 10px;
+    padding: 8px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
+.navbar li a svg {
+    margin-right: 8px;
+}
+
 .navbar li a:hover {
+    background-color: var(--yellow);
+    color: var(--darkblue);
+}
+/* ... previous styles ... */
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0; 
+    width: 70px;
+    background-color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 0.5s ease forwards;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.navbar.open {
+    width: 250px;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.navbar.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar.open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.nav-link {
+    font-size: 30px;
+}
+/* ... previous styles ... */
+
+.navbar li a {
+    /* ... previous styles ... */
+    position: relative;
+    /* Add this line */
+}
+
+.navbar li a::after {
+    content: attr(data-text);
+    /* Add this line */
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    padding: 6px;
+    background-color: var(--yellow);
+    color: var(--darkblue);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.navbar li a:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar li a svg {
+    margin-right: 8px;
+}
+
+.login-navbar {
+    background-color: var(--darkblue);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.login-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.login-navbar li {
+    margin: 0;
+}
+
+.login-navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-navbar li a:hover {
     background-color: var(--yellow);
     color: var(--darkblue);
 }

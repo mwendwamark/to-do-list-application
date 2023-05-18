@@ -8,48 +8,6 @@
 }
 
 
-/* Navbar Styles */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 2000px;
-  height: 100vh;
-  background-color: var(--blue);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.navbar li {
-  margin-bottom: 1rem;
-}
-
-.navbar li:last-child {
-  margin-bottom: 0;
-}
-
-.navbar a {
-  color: var(--yellow);
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  transition: color 0.2s ease-in-out;
-}
-
-.navbar a:hover {
-  color: var(--orange);
-}
 
 /* App Header Styles */
 .app-header {
@@ -77,18 +35,6 @@
   border-radius: 5px;
 }
 
-/* Input Group Styles */
-/* .input-group {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  margin-left: 220px;
-} */
 
 /* Home Message Styles */
 .home-message {
@@ -115,15 +61,6 @@
   padding: 2rem;
   background-color: #f9f9f9;
 }
-
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
 @media (min-width: 768px) {
 
   
@@ -136,11 +73,8 @@
     max-width: 800px;
     margin: 0 auto;
   }
-
-  /* ... Apply other layout adjustments as needed ... */
 }
 
-/* ... Apply additional media queries and styles for different screen sizes ... */
 .home-header {
   display: flex;
   align-items: center;
@@ -148,7 +82,7 @@
 }
 
 .home-icon {
-  font-size: 3rem;
+  font-size: 48px;
   color: var(--yellow);
   margin-right: 1rem;
 }
@@ -410,4 +344,129 @@ color: #25d366;
 }
 .home-social-icon-github:hover{
     color: #24292e;
+}
+/* ... previous CSS code ... */
+
+/* Animations */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-message {
+  animation: fadeInUp 0.5s ease;
+}
+
+.home-features {
+  animation: fadeInUp 0.5s ease;
+  animation-delay: 0.2s;
+}
+
+.home-testimonials {
+  animation: fadeInUp 0.5s ease;
+  animation-delay: 0.4s;
+}
+
+.testimonial {
+  animation: fadeInUp 0.5s ease;
+}
+
+.footer-container {
+  animation: fadeInUp 0.5s ease;
+  animation-delay: 0.6s;
+}
+
+.home-social-icons {
+  animation: fadeInUp 0.5s ease;
+  animation-delay: 0.6s;
+}
+
+@media screen and (min-width: 768px) {
+  .home-container {
+    padding: 40px;
+  }
+
+  .home-icon {
+    font-size: 64px;
+  }
+
+  .app-header {
+    font-size: 32px;
+  }
+
+  .home-message {
+    margin: 40px 0;
+  }
+
+  .home-cta {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+
+  .home-features li {
+    font-size: 18px;
+  }
+
+  .testimonial {
+    font-size: 18px;
+  }
+
+  .footer-container {
+    padding: 40px;
+  }
+
+  .home-social-icon-instagram,
+  .home-social-icon-linkedin,
+  .home-social-icon-whatsapp,
+  .home-social-icon-github {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .home-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .home-message {
+    text-align: left;
+  }
+
+  .home-features,
+  .home-testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+
+  .home-testimonials {
+    flex-wrap: wrap;
+  }
+
+  .testimonial {
+    width: calc(50% - 10px);
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

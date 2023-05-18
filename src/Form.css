@@ -11,7 +11,9 @@
 .form-container {
     background-color: var(--skyBlue);
     padding: 20px;
-    min-height: 100vh;
+    min-height: 1000vh;
+    border-radius: 5px;
+
 }
 
 .home-icon-form {

@@ -4,7 +4,10 @@ import Form from "./Form";
 import Home from "./Home";
 import Navbar from "./Navbar";
 import Login from "./Login";
+import Services from "./Services";
+import About from "./About";
 import "./App.css";
+import Contacts from "./Contacts";
 
 const App = () => {
   return (
@@ -23,9 +26,12 @@ const App = () => {
         >
           <Routes>
             <Route path="/login" element={<Login />} />
-            <Route path="/form" element={<Form />} />
+            {/* <Route path="/form" element={<Form />} /> */}
             <Route exact path="/" element={<Home />} />
-            <Route path="/todo" element={<Form />} />
+            <Route path="/your-todo-list" element={<Form />} />
+            <Route path = "/services" element={<Services />} />
+            <Route path = "/about" element={<About />} />
+            <Route path = "/contacts" element = {<Contacts />} />
           </Routes>
         </div>
       </div>

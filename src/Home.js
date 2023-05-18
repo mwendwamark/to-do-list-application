@@ -66,6 +66,7 @@ const Home = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="instagram"
+                  data-tooltip="Instagram"
                 >
                   <FaInstagram className="home-social-icon-instagram" />
                 </a>
@@ -74,6 +75,7 @@ const Home = () => {
                   href="https://www.linkedin.com/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-tooltip="LinkedIn"
                 >
                   <FaLinkedin className="home-social-icon-linkedin" />
                 </a>
@@ -81,6 +83,7 @@ const Home = () => {
                   href="https://api.whatsapp.com/send?phone=0717084324"
                   target="https://web.whatsapp.com/"
                   rel="noopener noreferrer"
+                  data-tooltip="Whatsapp"
                 >
                   <FaWhatsapp className="home-social-icon-whatsapp" />
                 </a>
@@ -88,6 +91,7 @@ const Home = () => {
                   href="https://github.com/"
                   target="https://github.com/mwendwamark"
                   rel="noopener noreferrer"
+                  data-tooltip="Github"
                 >
                   <FaGithub className="home-social-icon-github" />
                 </a>

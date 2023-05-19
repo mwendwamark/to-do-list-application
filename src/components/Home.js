@@ -16,12 +16,10 @@ const Home = () => {
       </div>
       <div className="home-message">
         <h3>
-          Never forget a task again with <span>Task-lister</span>. Our intuitive
-          and user-friendly app makes it easy to manage all of your tasks in one
-          place. Whether you're a busy professional, a student, or just someone
-          with a lot on their plate, Task-lister is the perfect tool to help you
-          stay organized and on top of things. Try it today and experience the
-          power of streamlined task management.
+          Task-lister: The ultimate task management app that keeps you organized
+          and on top of your tasks. Perfect for professionals, students, and
+          anyone with a busy schedule. Try it today and never forget a task
+          again!
         </h3>
         <a href="/login" className="home-cta">
           Get Started

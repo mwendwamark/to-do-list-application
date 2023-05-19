@@ -9,17 +9,26 @@
 
 .home-container {
   position: relative;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
   /* background-image: url(backgroundImage); */
-  background-size: 40%;
+  background-size: 30%;
   background-repeat: no-repeat;
   background-position: right center;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   overflow-x: hidden;
   /* Add this line to hide horizontal overflow */
+}
+.notebook-image {
+  width: 500px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+  border-radius: 10px;
 }
 
 
@@ -34,14 +43,15 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  font-size: 800px;
+  font-size: 24px;
   padding-bottom: 2px;
 }
+
 
 .home-icon {
   font-size: 24px;
   color: var(--darkblue);
-   font-size: 24px;
+   
  
 }
 
@@ -51,6 +61,7 @@
   padding-top: 40px;
   font-size: 32px;
   color: var(--darkblue);
+  
 }
 
 .home-message {
@@ -60,6 +71,15 @@
   font-size: 22px;
   text-decoration:initial ;
   border-radius: 12px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.app-header:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .home-cta {

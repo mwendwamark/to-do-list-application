@@ -3,6 +3,7 @@ import { FaTasks } from "react-icons/fa";
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import "./App.css";
 import backgroundImage from "./background.jpg";
+import notebook from "./notebook.jpg";
 
 const Home = () => {
   return (
@@ -14,16 +15,23 @@ const Home = () => {
         <FaTasks className="home-icon" />
         <h1 className="app-header">Task-lister</h1>
       </div>
+      
       <div className="home-message">
-        <h3>
-          Task-lister: The ultimate task management app that keeps you organized
-          and on top of your tasks. Perfect for professionals, students, and
-          anyone with a busy schedule. Try it today and never forget a task
-          again!
-        </h3>
-        <a href="/login" className="home-cta">
-          Get Started
-        </a>
+        <div
+          className="notebook-image"
+          style={{ backgroundImage: `url(${notebook})` }}
+        ></div>
+        <div className="message-content">
+          <h3>
+            Task-lister: The ultimate task management app that keeps you
+            organized and on top of your tasks. Perfect for professionals,
+            students, and anyone with a busy schedule. Try it today and never
+            forget a task again!
+          </h3>
+          <a href="/login" className="home-cta">
+            Get Started
+          </a>
+        </div>
       </div>
       <div className="home-features">
         <h2>Features</h2>
@@ -31,8 +39,6 @@ const Home = () => {
           <li>Easy to use interface</li>
           <li>Customizable task categories</li>
           <li>Set due dates and reminders</li>
-          {/* <li>Assign tasks to team members</li>
-          <li>View progress and completion rates</li> */}
         </ul>
       </div>
       <div className="home-testimonials">
@@ -53,50 +59,46 @@ const Home = () => {
           </p>
           <p>- Jane Smith, Freelance Writer</p>
         </div>
-        <div>
-          <footer className="footer-container">
-            {/* <h3 className="conect"></h3> */}
-            <br />
-            <div className="home-social-icons">
-              <ul>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="instagram"
-                  data-tooltip="Instagram"
-                >
-                  <FaInstagram className="home-social-icon-instagram" />
-                </a>
+        <footer className="footer-container">
+          <div className="home-social-icons">
+            <ul>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="instagram"
+                data-tooltip="Instagram"
+              >
+                <FaInstagram className="home-social-icon-instagram" />
+              </a>
 
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-tooltip="LinkedIn"
-                >
-                  <FaLinkedin className="home-social-icon-linkedin" />
-                </a>
-                <a
-                  href="https://api.whatsapp.com/send?phone=0717084324"
-                  target="https://web.whatsapp.com/"
-                  rel="noopener noreferrer"
-                  data-tooltip="Whatsapp"
-                >
-                  <FaWhatsapp className="home-social-icon-whatsapp" />
-                </a>
-                <a
-                  href="https://github.com/"
-                  target="https://github.com/mwendwamark"
-                  rel="noopener noreferrer"
-                  data-tooltip="Github"
-                >
-                  <FaGithub className="home-social-icon-github" />
-                </a>
-              </ul>
-            </div>
-          </footer>
-        </div>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-tooltip="LinkedIn"
+              >
+                <FaLinkedin className="home-social-icon-linkedin" />
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=0717084324"
+                target="https://web.whatsapp.com/"
+                rel="noopener noreferrer"
+                data-tooltip="Whatsapp"
+              >
+                <FaWhatsapp className="home-social-icon-whatsapp" />
+              </a>
+              <a
+                href="https://github.com/"
+                target="https://github.com/mwendwamark"
+                rel="noopener noreferrer"
+                data-tooltip="Github"
+              >
+                <FaGithub className="home-social-icon-github" />
+              </a>
+            </ul>
+          </div>
+        </footer>
       </div>
     </div>
   );

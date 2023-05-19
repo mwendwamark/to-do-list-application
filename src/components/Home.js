@@ -22,7 +22,7 @@ const Home = () => {
           style={{ backgroundImage: `url(${notebook})` }}
         ></div>
         <div className="message-content">
-          <h3>
+          <h3 className="h3-home-message">
             Task-lister: The ultimate task management app that keeps you
             organized and on top of your tasks. Perfect for professionals,
             students, and anyone with a busy schedule. Try it today and never

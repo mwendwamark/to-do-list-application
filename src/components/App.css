@@ -1,3 +1,4 @@
+
 :root {
   --darkblue: #023047;
   --yellow: #ffb703;
@@ -9,18 +10,18 @@
 
 .home-container {
   position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-  /* background-image: url(backgroundImage); */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px; 
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: right center;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   overflow-x: hidden;
-  /* Add this line to hide horizontal overflow */
+ 
 }
+
 .notebook-image {
   width: 500px;
   height: 250px;
@@ -51,8 +52,8 @@
 .home-icon {
   font-size: 24px;
   color: var(--darkblue);
-   
- 
+
+
 }
 
 .app-header {
@@ -61,15 +62,15 @@
   padding-top: 40px;
   font-size: 32px;
   color: var(--darkblue);
-  
+
 }
 
 .home-message {
   margin-bottom: 20px;
   color: var(--darkblue);
-  text-shadow:#df6565;
+  text-shadow: #df6565;
   font-size: 22px;
-  text-decoration:initial ;
+  text-decoration: initial;
   border-radius: 12px;
   transition: transform 0.3s ease;
   display: flex;
@@ -172,6 +173,7 @@
 .home-social-icon-github:hover {
   color: #333;
 }
+
 .home-testimonials {
   display: flex;
   flex-direction: column;
@@ -187,18 +189,18 @@
   border-radius: 20px;
 }
 
- .testimonial {
+.testimonial {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 30px;
   padding: 2rem;
   margin-bottom: 2rem;
   max-width: 600px;
-  text-align: left;  
-  margin-left: auto;  
+  text-align: left;
+  margin-left: auto;
   margin-right: auto;
-  
-} 
+
+}
 
 .testimonial p:first-of-type {
   font-size: 1.2rem;

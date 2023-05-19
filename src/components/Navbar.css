@@ -1,10 +1,12 @@
-.navbar {
-    background-color: #333;
-    color: #fff;
-    height: 60px;
-    position: fixed;
+/* .navbar-wrapper {
+    position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
+}
+
+.navbar {
+    color: #333;
+    height: 60px;
     width: 100%;
     z-index: 1000;
     transition: all 0.3s ease;
@@ -12,14 +14,6 @@
 
 .navbar.open {
     height: auto;
-}
-
-.navbar-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    padding: 0 20px;
 }
 
 .navbar-toggle {
@@ -35,14 +29,20 @@
     transition: all 0.3s ease;
 }
 
-.navbar ul {
+.navbar-links {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: flex-end;
 }
 
-.navbar ul li {
+.navbar-links.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-links li {
     margin-left: 20px;
 }
 
@@ -53,16 +53,7 @@
     text-decoration: none;
 }
 
-.navbar.open ul {
-    opacity: 1;
-    visibility: visible;
-}
-
-.navbar ul li a {
-    position: relative;
-}
-
-.navbar ul li a:after {
+.navbar-links li a:after {
     content: attr(data-text);
     position: absolute;
     top: 100%;
@@ -78,7 +69,7 @@
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.navbar ul li a:hover:after {
+.navbar-links li:hover a:after {
     opacity: 1;
     visibility: visible;
 }
@@ -88,11 +79,11 @@
         display: block;
     }
 
-    .navbar ul {
+    .navbar-links {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        left: 0;
+        right: 0;
         width: 100%;
         background-color: #333;
         padding: 20px;
@@ -103,13 +94,13 @@
         font-size: 20px;
     }
 
-    .navbar.open ul {
+    .navbar-links.open {
         opacity: 1;
         visibility: visible;
         font-size: 20px;
     }
 
-    .navbar ul li {
+    .navbar-links li {
         margin: 10px 0;
     }
 }
@@ -122,4 +113,4 @@
     .nav-link {
         font-size: 14px;
     }
-}
+} */

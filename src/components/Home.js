@@ -4,25 +4,41 @@ import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import "./App.css";
 import backgroundImage from "./background.jpg";
 import notebook from "./notebook.jpg";
+import Navbar from "./Navbar";
 
 const Home = () => {
   return (
     <div
       className="home-container"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      // style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="home-header">
-        <FaTasks className="home-icon" />
-        <h1 className="app-header">Task-lister</h1>
+      <div className="header-container">
+        <div className="home-header">
+          <FaTasks className="home-icon" />
+          <h1 className="app-header">Task-lister</h1>
+        </div>
+        <Navbar /> {/* Render the Navbar component here */}
       </div>
-      
+
       <div className="home-message">
-        <div
-          className="notebook-image"
-          style={{ backgroundImage: `url(${notebook})` }}
-        ></div>
         <div className="message-content">
           <h3 className="h3-home-message">
+            <span className="span-task">Task-lister:</span> <br /> The ultimate task management app that
+            keeps you organized and on top of your tasks. Perfect for
+            professionals, students, and anyone with a busy schedule. Try it
+            today and never forget a task again!
+          </h3>
+          <a href="/login" className="home-cta">
+            Get Started
+          </a>
+        </div>
+        <div
+          className="notebook-image"
+          // style={{ backgroundImage: `url(${notebook})` }}
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        ></div>
+        {/* <div className="message-content">
+          {/* <h3 className="h3-home-message">
             Task-lister: The ultimate task management app that keeps you
             organized and on top of your tasks. Perfect for professionals,
             students, and anyone with a busy schedule. Try it today and never
@@ -31,7 +47,8 @@ const Home = () => {
           <a href="/login" className="home-cta">
             Get Started
           </a>
-        </div>
+        </div> */}{" "}
+        
       </div>
       <div className="home-features">
         <h2>Features</h2>
@@ -41,6 +58,10 @@ const Home = () => {
           <li>Set due dates and reminders</li>
         </ul>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="home-testimonials">
         <h2>Testimonials</h2>
         <div className="testimonial">

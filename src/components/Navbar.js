@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  FaHome,
-  FaInfoCircle,
-  FaBriefcase,
-  FaEnvelope,
-  FaList,
-  FaSignInAlt,
+  FaHome,   
+  
 } from "react-icons/fa";
 import "./Navbar.css";
 
@@ -22,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="navbar-wrapper">
       <nav className={`navbar ${isOpen ? "open" : ""}`}>
         <div className="navbar-toggle" onClick={toggleNavbar}>
           <div className={`line ${isOpen ? "line-active" : ""}`}></div>
@@ -41,7 +37,7 @@ const Navbar = () => {
           <li onClick={closeNavbar}>
             <Link to="/your-todo-list" data-text="Todo List">
               <span className="nav-link">
-                <FaList />
+                
                 <span className="link-text">Todo List</span>
               </span>
             </Link>
@@ -49,7 +45,7 @@ const Navbar = () => {
           <li onClick={closeNavbar}>
             <Link to="/about" data-text="About">
               <span className="nav-link">
-                <FaInfoCircle />
+                
                 <span className="link-text">About</span>
               </span>
             </Link>
@@ -57,7 +53,7 @@ const Navbar = () => {
           <li onClick={closeNavbar}>
             <Link to="/services" data-text="Services">
               <span className="nav-link">
-                <FaBriefcase />
+              
                 <span className="link-text">Services</span>
               </span>
             </Link>
@@ -65,7 +61,7 @@ const Navbar = () => {
           <li onClick={closeNavbar}>
             <Link to="/contacts" data-text="Contacts">
               <span className="nav-link">
-                <FaEnvelope />
+               
                 <span className="link-text">Contacts</span>
               </span>
             </Link>
@@ -73,7 +69,7 @@ const Navbar = () => {
           <li onClick={closeNavbar}>
             <Link to="/login">
               <span className="nav-link" data-text="Login">
-                <FaSignInAlt />
+                
                 <span className="link-text">Login</span>
               </span>
             </Link>

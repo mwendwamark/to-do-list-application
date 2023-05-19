@@ -15,7 +15,7 @@ const App = () => {
       {/* <div 
       style={{ backgroundColor: "var(--skyBlue)" }}
       > */}
-        <Navbar />
+        {/* <Navbar /> */}
         
         
           <Routes>

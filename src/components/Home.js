@@ -3,7 +3,7 @@ import { FaTasks } from "react-icons/fa";
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import "./App.css";
 import backgroundImage from "./background.jpg";
-import notebook from "./notebook.jpg";
+// import notebook from "./notebook.jpg";
 import Navbar from "./Navbar";
 
 const Home = () => {

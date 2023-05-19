@@ -31,8 +31,10 @@
   margin-left: 10px;
   padding-bottom: 40px;
   padding-top: 40px;
-  font-size: 32px;
+  font-size: 39px;
   color: var(--darkblue);
+  /* font-weight:; */
+  font-weight: 900px;
 }
 
 .navbar {

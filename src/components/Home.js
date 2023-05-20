@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaTasks } from "react-icons/fa";
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import "./App.css";
@@ -17,16 +17,19 @@ const Home = () => {
           <FaTasks className="home-icon" />
           <h1 className="app-header">Task-lister</h1>
         </div>
-        <Navbar /> {/* Render the Navbar component here */}
+        
+        
+        <Navbar /> 
       </div>
+      
 
       <div className="home-message">
         <div className="message-content">
           <h3 className="h3-home-message">
-            <span className="span-task">Task-lister:</span> <br /> The ultimate task management app that
-            keeps you organized and on top of your tasks. Perfect for
-            professionals, students, and anyone with a busy schedule. Try it
-            today and never forget a task again!
+            <span className="span-task">Task-lister:</span> <br /> The ultimate
+            task management app that keeps you organized and on top of your
+            tasks. Perfect for professionals, students, and anyone with a busy
+            schedule. Try it today and never forget a task again!
           </h3>
           <a href="/login" className="home-cta">
             Get Started
@@ -48,7 +51,6 @@ const Home = () => {
             Get Started
           </a>
         </div> */}{" "}
-        
       </div>
       <div className="home-features">
         <h2>Features</h2>

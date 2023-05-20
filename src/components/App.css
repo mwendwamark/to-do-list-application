@@ -5,7 +5,6 @@
   --blue: #219ebc;
   --orange: #fb8500;
 }
-
 .header-container {
   display: flex;
   align-items: center;
@@ -48,11 +47,13 @@
   left: 0;
 }
 
+
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -76,6 +77,7 @@
 }
 
 .back-ground-image {
+  
   height: 400px;  
   width: 400px;
   background-repeat: no-repeat;
@@ -83,6 +85,7 @@
   margin-right: 20px;
   border-radius: 10px;
 }
+
 
 .home-message {
   margin-bottom: 20px;
@@ -97,9 +100,8 @@
   margin-right: 20px;
   font-weight: 100;
 }
-
-.assisting {
-  height: 400px;  
+.assisting{
+height: 400px;  
   width: 400px;
   background-repeat: no-repeat;
   background-position: center;
@@ -110,58 +112,61 @@
 
 .app-header:hover {  
   cursor: pointer;
+  
 }
 
 .home-cta {
   display: inline-block;
   padding: 10px 20px;
-  background-color: rgba(2, 137, 122);
+  background-color:rgba(2, 137, 122);
   color: white;
   text-decoration: none;
   border-radius: 10px;
   transition: background-color 0.3s ease;
-  border: rgba(2, 137, 122) 4px solid;
+  border:rgba(2, 137, 122) 4px solid;
   font-weight: 900;
 }
 
 .home-cta:hover {
   background-color: white;
   color: rgba(2, 137, 122);
+  
 }
 
-.h3-task-lister {
+
+
+.h3-task-lister{
   padding-top: 10px;
   font-size: 30px;
   font-weight: 900;
   max-width: 400px;
-}
 
-.p3 {
+}
+.p3{
+ 
   max-width: 400px;
   margin-left: 700px;
+  
 }
-
-.italic {
+.italic{
   font-size: 25px !important;
-  font-weight: 900;
+  font-weight:900;
 }
-
-.paragraph {
+.paragraph{
   font-size: 29px;
   max-width: 400px;  
   padding-top: 10px;
-}
 
-.features-heading {
+  
+}
+.features-heading{
   color: var(--darkblue);
   font-size: 32px;
 }
-
-.features-list {
-  color: var(--darkblue);
-  font-size: 20px;
+.features-list{
+   color: var(--darkblue);
+   font-size: 20px;
 }
-
 .home-testimonials {
   display: flex;
   flex-direction: column;
@@ -170,7 +175,7 @@
   margin-top: 20px;
 }
 
-.testimonials-heading {
+.testimonials-heading{
   color: rgba(2, 137, 122);
   font-size: 50px;
 }
@@ -185,8 +190,12 @@
 .footer-container {
   margin-top: 40px;
   text-align: right;
+  /* border-radius: 10px; */
+  /* background-color: whitesmoke; */
   width: 100%;
-  height: 200px;
+  height : 200px;
+  
+
 }
 
 .home-social-icons ul {
@@ -203,11 +212,9 @@
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
 span {
   text-decoration: underline;
 }
-
 .terms {
   color: var(--darkblue);
   text-decoration: none;
@@ -217,11 +224,9 @@ span {
   font-size: 23px;
   text-align: start;
 }
-
 i {
   font-size: 32px;
 }
-
 .home-social-icons a:hover {
   color: var(--green);
 }
@@ -251,6 +256,8 @@ i {
   color: #333;
 }
 
+
+
 .testimonial {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -264,23 +271,25 @@ i {
 }
 
 @media screen and (max-width: 1200px) {
-  .header-container {
+  .header-container{
     flex-direction: column;
     align-items: flex-start;
+    
   }
-  .home-header {
+  .home-header{
     font-size: 25px;
     padding-bottom: 0;
     margin-bottom: 10px;
   }
-  .app-header {
+  .app-header{
     padding-right: 0;
     font-size: 35px;
   }
-  .h3-home-message {
+  .h3-home-message{
     padding-right: 40px;
+   
   }
-  .span-task {
+  .span-task{
     padding-right: 40px;
     font-size: 25px;
   }
@@ -288,33 +297,457 @@ i {
   .home-message {
     flex-direction: column;
     align-items: flex-start;
-  }
-  .home-cta {
+   
+  }  
+  .home-cta{
     margin-top: 10px;
     padding: 8px 16px;
   }
-  .home-container {
-    padding: 10px;
+  .home-container{
+    padding: 10px; ;
   }
+
   .h3-task-lister {
     margin-top: 20px;
   }
-  .assisting {
-    max-height: 400px;
+  .assisting{
+   max-height: 400px;
     max-width: 400px;
   }
+  .paragraph{
+    margin-left:0 ;
+  }
+  .p3{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px){
+  .paragraph,
+  .h3-task-lister{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-header{
+    font-size: 20px;
+  }
+  .app-header{
+    font-size: 30px;
+  }
+  .span-task{
+    font-size: 25px;
+  }
+  .message-content {
+    text-align: center;
+  }
+
+  .home-cta {
+    margin-top: 20px;
+  }
+  .h3-task-lister,
+  .paragraph{
+    font-size: 20px;
+  }
+  
+
+  .home-features,
+  .home-testimonials {
+    margin-top: 20px;
+  }
+
+  .home-testimonials .testimonial {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .home-header {
+    font-size: 18px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .h3-home-message {
+    font-size: 15px;
+    padding-right: 20px;
+  }
+
+  .span-task {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+
+  .app-header {
+    padding-right: 0;
+    font-size: 25px;
+  }
+
+  .home-container {
+    padding: 10px;
+  }
+
+  .home-message {
+    font-size: 16px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .assisting,
+  .back-ground-image {
+    margin-right: 0;
+  }
+
+  .home-cta {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .h3-task-lister {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .p3 {
+    margin-left: 0;
+  }
+
+  .home-testimonials,
+  .home-features {
+    margin-top: 10px;
+  }
+
+  .testimonial {
+    margin-bottom: 10px;
+  }
+
+  .footer-container {
+    margin-top: 20px;
+    padding: 5px;
+    height: auto;
+  }
+
+  .terms {
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .home-social-icon-instagram,
+  .home-social-icon-linkedin,
+  .home-social-icon-whatsapp,
+  .home-social-icon-github {
+    font-size: 20px;
+    padding-right: 5px;
+    padding-top: 5px;
+  }
+}
+
+/* .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding-bottom: 2px;
+}
+
+.h3-home-message {
+  font-size: 25px;
+  font-weight: 20px;
+  display: block;
+  border-radius: 20px;
+  border: 12px solid transparent;
+  border-style: inset;
+  padding-right: 100px;
+}
+
+.span-task {
+  text-decoration: none;
+  padding-right: 100px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.app-header {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  font-size: 39px;
+  color: var(--darkblue);
+  font-weight: 900px;
+  padding-right: 250px;
+  top: 0;
+  left: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
+  background-image: url('./actualbackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.back-ground-image {
+  height: 400px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.home-message {
+  margin-bottom: 20px;
+  color: var(--darkblue);
+  text-shadow: #df6565;
+  font-size: 22px;
+  text-decoration: initial;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex: 1;
+  margin-right: 20px;
+  font-weight: 100;
+}
+
+.assisting {
+  height: 400px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.app-header:hover {
+  cursor: pointer;
+}
+
+.home-cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(2, 137, 122);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  border: rgba(2, 137, 122) 4px solid;
+  font-weight: 900;
+}
+
+.home-cta:hover {
+  background-color: white;
+  color: rgba(2, 137, 122);
+}
+
+.h3-task-lister {
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 900;
+  max-width: 400px;
+}
+
+.p3 {
+  max-width: 400px;
+}
+
+.italic {
+  font-size: 25px !important;
+  font-weight: 900;
+}
+
+.paragraph {
+  font-size: 29px;
+  max-width: 400px;
+  padding-top: 10px;
+}
+
+.features-heading {
+  color: var(--darkblue);
+  font-size: 32px;
+}
+
+.features-list {
+  color: var(--darkblue);
+  font-size: 20px;
+}
+
+.home-testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimonials-heading {
+  color: green;
+  font-size: 50px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+  color: var(--darkblue);
+  text-align: right;
+}
+
+.footer-container {
+  margin-top: 40px;
+  text-align: right;
+  border-radius: 10px;
+}
+
+.home-social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.home-social-icons a {
+  margin-right: 10px;
+  color: var(--darkblue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.home-social-icons a:hover {
+  color: var(--green);
+}
+
+.home-social-icon-instagram,
+.home-social-icon-linkedin,
+.home-social-icon-whatsapp,
+.home-social-icon-github {
+  font-size: 24px;
+}
+
+.home-social-icon-instagram:hover {
+  color: #e4405f;
+}
+
+.home-social-icon-linkedin:hover {
+  color: #0e76a8;
+}
+
+.home-social-icon-whatsapp:hover {
+  color: #25d366;
+}
+
+.home-social-icon-github:hover {
+  color: #333;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-header {
+    font-size: 25px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .app-header {
+    padding-right: 0;
+    font-size: 35px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .h3-home-message {
+    padding-right: 40px;
+  }
+
+  .span-task {
+    padding-right: 40px;
+    font-size: 30px;
+  }
+
+  .home-cta {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 18px;
+  }
+
+  
+  .assisting {
+    margin-right: 0;
+  }
+
+  .home-container {
+    padding: 10px;
+    background-size: 50%;
+  }
+
+  .back-ground-image,
+  .assisting {
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+  }
+
+  .h3-task-lister,
   .paragraph {
     margin-left: 0;
   }
+
   .p3 {
     margin-left: 0;
+    margin-top: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .paragraph,
-  .h3-task-lister {
+
+  .h3-task-lister,
+  .paragraph {
     font-size: 25px;
+  }
+
+  .paragraph {
+    font-size: 22px;
   }
 }
 
@@ -322,27 +755,25 @@ i {
   .home-header {
     font-size: 20px;
   }
+
   .app-header {
     font-size: 30px;
   }
+
   .span-task {
     font-size: 25px;
   }
-  .message-content {
-    text-align: center;
-  }
+
   .home-cta {
-    margin-top: 20px;
+    font-size: 16px;
   }
+
   .h3-task-lister,
   .paragraph {
     font-size: 20px;
   }
-  .home-features,
-  .home-testimonials {
-    margin-top: 20px;
+
+  .testimonial {
+    font-size: 16px;
   }
-  .home-testimonials .testimonial {
-    margin-bottom: 20px;
-  }
-}
+} */

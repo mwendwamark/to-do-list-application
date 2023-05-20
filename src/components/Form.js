@@ -1,21 +1,18 @@
-import React, { useState  } from "react"; import ReminderComponent from "./Reminder";
+import React, { useState } from "react";
+import ReminderComponent from "./Reminder";
 import "./Form.css";
-import { FaTasks } from "react-icons/fa";
-import { FaTrash } from "react-icons/fa";
-import { FaEdit } from "react-icons/fa";
-import { FaCheck } from "react-icons/fa";
+import { FaHome, FaTrash, FaEdit, FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const HomeIcon = () => (
   <Link to="/">
-    <FaTasks className="home-icon-form" />
+    <FaHome className="home-icon-form" data-text ="Home"/>
   </Link>
 );
 
 const Form = () => {
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -47,7 +44,7 @@ const Form = () => {
     <div className="form-container">
       <HomeIcon />
       <div className="reminder-wrapper">
-            <ReminderComponent />
+        <ReminderComponent />
       </div>
 
       <header>
@@ -55,8 +52,6 @@ const Form = () => {
       </header>
       <form onSubmit={handleSubmit} className="form-title">
         <div className="input-group">
-          <br />
-          <br />
           <input
             type="text"
             name="name"
@@ -92,14 +87,14 @@ const Form = () => {
                     onClick={() => handleDelete(index)}
                   >
                     <FaTrash className="trash-icon" />
-                    <span className="delete-text"></span>
+                    <span className="delete-text">Delete</span>
                   </button>
                   <button
                     className="dropdown-menu-item-done"
                     onClick={() => handleDone(index)}
                   >
                     <FaCheck className="check-icon" />
-                    <span className="done-text"> Done</span>
+                    <span className="done-text">Done</span>
                   </button>
                 </div>
               </div>

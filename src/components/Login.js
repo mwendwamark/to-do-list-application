@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import "./login.css";
-import { FaTasks } from "react-icons/fa";
+import { FaHome,  } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const HomeIcon = () => (
   <Link to="/">
-    <FaTasks className="home-icon-login" />
+    <FaHome className="home-icon-login" />
   </Link>
 );
 
 const RegisterIcon = () => (
-  <Link to="/todo">
+  <Link to="/your-todo-list">
     <p className="register-icon-login" > Proceed</p>
   </Link>
 );
@@ -26,7 +26,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <HomeIcon />
-      <h2>Create an Account</h2>
+      <h2 className="create-account-heading">Create an Account</h2>
       {submitted ? (
         <p>Thank you for submitting your information. <RegisterIcon/></p>
       ) : (
@@ -103,11 +103,11 @@ const Login = () => {
         {/* Welcome we assure you the best experience  */}
       </p>
       <br />
-      <p>
+      <p className="privacy-policy and-terms">
         
-        {/* By creating an account, you agree to our{" "}
-        <a href="/terms">terms of use</a> and{" "}
-        <a href="/privacy">privacy policy</a>. */}
+        By creating an account, you agree to our{" "}
+        <a href="/terms" className="terms">terms of use</a> and{" "}
+        <a href="/privacy">privacy policy</a>.
       </p>
     </div>
   );

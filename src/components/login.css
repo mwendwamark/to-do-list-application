@@ -1,103 +1,9 @@
-/*.login-container{
-    background-attachment: fixed;
-    margin: 0;
-}
-.login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-.button-group {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.proceed-button {
-    background-color: var(--darkblue);
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.proceed-button:hover {
-    background-color: var(--blue);
-}
-
-.home-cta-x {
-    color: var(--darkblue);
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.button-separator {
-    width: 20px;
-}
-.first-name-input,
-.last-name-input{
-    width: 100%;
-    height: 35px;
-    border: none;
-    border-radius: 50px;
-}
-.first-name-input{
-    padding-left: 10px;
-}
-.email-input,
-.password-input,
-.user-name-input{
-    width: 100%;
-    height: 35px;
-    border: none;
-    border-radius: 50px;
-}
- Password
-.password-input{
-    padding-left: 10px;
-}
-.password-input:hover,
-.user-name-input:hover{
-    background-color: var(--blue);
-}
-.password-input:focus,
-.user-name-input:focus{
-    background-color: var(--blue);
-}
-.password-input::placeholder,
-.user-name-input::placeholder{
-    color: var(--darkblue);
-} 
-.home-icon-login{
-    font-size: 3rem;
-    color: var(--yellow);
-    margin-right: 1rem;
-}
-.home-icon-login:hover{
-    color: var(--darkblue);
-}
-.register-icon-login{
-    background-color: var(--darkblue);
-        color: white;
-        font-weight: bold;
-        border: none;
-        border-radius: 10px;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-
-}*/
 .login-container {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 20px;
 }
 
 @media (max-width: 600px) {
@@ -108,25 +14,40 @@
 }
 
 .home-icon-login {
-    font-size: 24px;
+    font-size: 30px;
+    padding-right: 100px;
+    color:rgba(2, 137, 122) ;
+
 }
 
-h2 {
+/* h2 {
     margin-top: 20px;
+    color: var(--darkblue); *
+}*/
+.create-account-heading{
+    margin-top: 20px;
+    color: var(--darkblue);
+        
 }
 
 form {
     margin-top: 20px;
+    border-radius: 12px;
+    /* background-color:rgba(2, 137, 122) ; */
+    padding-left: 40px;
 }
 
 label {
     font-weight: bold;
+    font-size: 19px;
 }
 
 input {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 7px;
+
 }
 
 .button-group {
@@ -135,11 +56,13 @@ input {
 }
 
 .proceed-button {
-    background-color: #4caf50;
+    background-color: rgba(2, 137, 122);
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
+    font-weight: 400;
 }
 
 .button-separator {
